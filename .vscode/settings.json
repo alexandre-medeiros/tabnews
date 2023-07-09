@@ -1,3 +1,5 @@
 {
-  "workbench.colorTheme": "OM Theme (Default Dracula Italic)"
+  "workbench.colorTheme": "Default Dark Modern",
+  "php.suggest.basic": false,
+  "php.validate.enable": false
 }
