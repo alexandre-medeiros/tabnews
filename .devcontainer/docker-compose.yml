@@ -9,7 +9,7 @@ services:
       LIBGL_ALWAYS_INDIRECT: 0
     volumes_from:
       - x11-bridge:rw
-      - $PWD:$PWD 
+      - /workspaces/tabnews:/workspaces/tabnews
     depends_on:
       - x11-bridge
 

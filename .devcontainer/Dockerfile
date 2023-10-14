@@ -1,5 +1,7 @@
 FROM public.ecr.aws/bitnami/node:18.16.0 AS dev 
 
+WORKDIR /workspaces/tabnews
+
 RUN apt-get update && \
     export DEBIAN_FRONTEND=noninteractive && \
     apt-get -y install --no-install-recommends \
