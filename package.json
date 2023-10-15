@@ -4,6 +4,7 @@
   "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
   "main": "index.js",
   "scripts": {
+    "open":"npx cypress open",
     "dev": "next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
@@ -22,5 +23,8 @@
     "cypress-cucumber-preprocessor": "^4.3.1",
     "jest": "^29.6.2",
     "prettier": "^2.8.8"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/tests"
   }
 }
