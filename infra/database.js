@@ -10,15 +10,13 @@ const credentials = {
 
 async function query(queryString) {
   const client = new Client(credentials);
-  await client.connect();
-  
+
   try {
+    await client.connect();
     const result = await client.query(queryString);
     return result;
-
   } catch (error) {
     console.log(error);
-
   } finally {
     await client.end();
   }
